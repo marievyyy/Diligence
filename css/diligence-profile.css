@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+::-webkit-scrollbar {
+  width:5px;
+}
+
+::webkit-scrollbar-track {
+  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background:rgba(142,139,130,0.8);
+  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background:rgba(142,139,130,0.4);
+}
+
+header {
+	padding: 0.8% 2%;
+    background-color: #000;
+}
+
+div.logo img {
+  max-width: 200px;
+}
+
+/*---------------- FORMS -----------------*/
+
+.gprform {
+  	padding: 2% 10%;
+}
+
+.form-group {
+  	margin-bottom: 20px;
+}
+
+h2.heading {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: left;
+	font-family: "Oswald";
+	color: #00a8ec;
+	border-bottom: 2px solid #00a8ec;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.controls {
+	text-align: left;
+	position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="password"],
+.controls select,
+.controls textarea,
+.controls button {
+	padding: 23px 30px 20px;	
+	font-size: 14px;
+	line-height: 24px;
+	outline: none;
+	border: 0;
+	width: 100%;
+	margin-bottom: 18px;
+	color: #2e2e2e;
+	font-family: "Montserrat";
+	font-size: 15px;
+	font-weight: 300;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+  	background: rgba(0, 168, 236, 0.1);
+}
+
+.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="password"]:hover + label,
+.controls select:focus + label,
+.controls select:hover + label  {
+	color: #00a8ec;
+	cursor: text;
+}
+
+.controls input[type="file"] {
+	line-height: 24px;
+	padding: 23px 30px 20px;
+	width: 100%;
+}
+
+
+.controls .fa-sort {
+   	position: absolute;
+  	right: 7%;
+  	top: 30%;
+  	color: #00a8ec;
+}
+
+.controls select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+   	cursor: pointer;
+}
+
+.controls select:hover,
+.controls select:focus {
+	outline: none;
+	border: 0;
+}
+
+.controls select option {
+	background-color: #fff;
+	outline: 0;
+	border: none;
+}
+
+.controls label {
+	position: absolute;
+	left: 20px;
+	top: 12px;
+	color: #00a8ec;
+	font-size: 16px;
+	display: inline-block;
+	padding: 4px 10px;
+	font-weight: 100;
+  	font-family: "Montserrat";
+    letter-spacing: -0.9px;
+	background-color: rgba(255, 255, 255, 0);
+	pointer-events: none;
+	-moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+	-o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+	-webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+	transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+
+.controls label.active {
+	top: -14px;
+	color: #00a8ec;
+}
+
+.controls textarea {
+	resize: none;
+	height: 150px;
+}
+
+i.fa {
+	margin-right: 5px; 
+    margin-left: 5px;
+}
+
+.controls button {
+  	font-family: "Montserrat";
+  	letter-spacing: 0.5px;
+	cursor: pointer;
+	background-color: #00a8ec;
+	border: none;
+	color: #fff;
+  	text-transform: uppercase;
+  	text-align: center;
+  	padding: 23px 15px 20px 15px;
+}
+
+.controls button:hover {
+	background-color: #000;
+	color: #00a8ec;
+}
+
+/*---------------- Upload File --------------*/
+
+.js .inputfile {
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1rem;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+    width: 100%;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.inputfile + label {
+  	background: rgba(0, 168, 236, 0.1);
+    color: #00a8ec;
+  	width: 100%;
+  	padding: 23px 30px 20px 15px;	
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Montserrat";
+    letter-spacing: -0.9px;
+	font-size: 16px;
+	font-weight: 300;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label,
+.inputfile + label:hover {
+    background-color: #000;
+    color: #00a8ec;
+}
+
+
+/* -------------- Radio Buttons ------------- */
+
+h3 {
+	font-size: 16px;
+	color: #00a8ec;
+	margin-top: 0;
+    font-family: "Montserrat";
+    font-weight: 300;
+    letter-spacing: -0.9px;
+}
+
+.radio-holder {
+	margin: 20px 0;
+}
+
+.radio {
+    padding-left: 20px;
+}
+
+.radio label {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: #00a8ec; 
+}
+
+.radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -2px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #00a8ec;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+ }
+
+.radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 19px;
+    height: 19px;
+    left: 3px;
+    top: 1px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); 
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+    outline: none;
+    border: 0; 
+}
+
+.radio label span {
+	padding-top: 3px;
+}
+
+.radio input[type="radio"]:checked + label::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1); 
+}
+
+.radio-primary input[type="radio"] + label::after {
+    background-color: #fff; 
+}
+
+.radio-primary input[type="radio"]:checked + label::before {
+    border-color: #00a8ec; 
+}
+
+.radio-primary input[type="radio"]:checked + label::after {
+    background-color: #00a8ec;
+}
+
+.form-horizontal .radio, .form-horizontal .radio-inline {
+    padding-top: 0;
+}
+
+/* -------------- End of Radio Buttons ------------- */
+
+
+
+/* ------------------ Confirmation ------------------*/
+
+div.confirmation {
+	margin: 5% 0;
+	padding: 5%;
+    background: url(../img/diligence-profile.jpg) no-repeat center center fixed;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.confirmation h2 {
+	font-family: "Montserrat";
+	font-size: 1.2em;
+	color: #fff;
+}
+
+div.confirmation .radio label {
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #fff; 
+}
+
+div.confirmation .radio label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -2px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+div.confirmation .radio label::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 19px;
+    height: 19px;
+    left: 3px;
+    top: 1px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); 
+}
+
+div.confirmation .radio-primary input[type="radio"] + label::after {
+    background-color: #fff; 
+}
+
+div.confirmation .radio-primary input[type="radio"]:checked + label::before {
+    border-color: #fff; 
+}
+
+div.confirmation .radio-primary input[type="radio"]:checked + label::after {
+    background-color: #fff;
+}
+
+div.confirmation p {
+	font-family: "Source Serif Pro";
+	font-size: 16px;
+    color: #fff;
+}
+
+div.confirmation button {
+	margin-top: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 23px 30px 20px;
+    text-transform: uppercase;    
+}
+
+div.confirmation button:hover {
+    background-color: #fff;
+    color: #00a8ec;
+}
+
+div.save {
+    padding-right: 0px;
+}
+
+.save button {
+    font-family: "Montserrat";
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-color: #000;
+    border: none;
+    color: #00a8ec;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 55px;
+}
+
+.save button:hover {
+    background-color: #00a8ec;
+    color: #fff;
+}
+
+
+/* ------------- Media Querries -------------*/
+
+
+@media (max-width: 767px) {
+
+    .form-horizontal .radio {
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+
+    .radio-group {
+        margin-bottom: 2%;
+    }
+
+    .radio-holder {
+        margin-top: 5px;
+    }
+
+}

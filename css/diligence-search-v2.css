@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html {
+ 	overflow-x: hidden;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+body {
+  	background: url(../img/diligence-form.jpg) no-repeat center center fixed;    
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+nav a.navbar-brand img.img-responsive {
+	max-width: 200px;
+	margin-top: -20px;
+}
+
+.navbar-inverse {
+    background-color: #000;
+    border-color: #080808;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.navbar-inverse .navbar-nav> li> a {
+	font-family: "Montserrat";
+	-moz-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.navbar-inverse .navbar-nav> li> a:hover {
+	color: #00a8ec;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+}
+
+/* Search Section */
+
+section {
+	margin-top: 15%;
+}
+
+.icon-search {
+	height: 80px;
+	width: 80px;
+	background-color: #000;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	position: absolute;
+	top: 26%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.icon-search svg {
+	max-width: 40px;
+	max-height: 40px;
+	position: absolute;
+	top: 25%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+form {
+	padding: 45px 10px;
+	background-color: #000;
+	background: rgba(0, 0, 0, 0.1);
+	width: 60%;
+}
+
+
+form input {
+	padding: 23px 30px 20px;	
+  	line-height: 24px;
+  	outline: none;
+  	border: 0;
+	width: 100%;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+  	-moz-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+ 	background: transparent;
+ 	border: 2px solid #fff;
+  	text-align: center;
+  	width: 80%;
+
+}
+
+form input::placeholder {
+	color: #fff;
+}
+
+form button.btn.btn-search {
+	padding: 23px 30px 20px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: none;
+    margin-top: -5px;
+    margin-left: -5px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+form button.btn.btn-search:hover {
+	background-color: #fff;
+	color: #00a8ec;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+	background: rgba(0, 0, 0, 0.9);
+	text-align: center;
+}
+
+.footer h6 {
+	font-size: 12px;
+	font-family: "Montserrat";
+    vertical-align: middle;
+    line-height: 30px;
+    color: #fff;
+}
+
+.footer span {
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+/* ------------- Media Querries -------------*/
+
+
+@media (max-width: 480px) {
+
+	
+}
+
+@media (max-width: 768px) {
+
+	.navbar-inverse {
+		padding: 0;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+  	nav a.navbar-brand img.img-responsive {
+		max-width: 120px;
+		margin-top: -10px;
+	}
+
+	.navbar-toggle {
+		border-radius: 0;
+	}
+
+	div.navbar-header {
+		margin-top: 5px;
+	}
+
+	form {
+		width: 100%;
+		margin-top: 0%;
+	}
+
+	form input,
+	form button.btn.btn-search {
+		width: 90%;
+	}
+
+	form button.btn.btn-search {
+		margin-top: 2px;
+		margin-left: 0px;
+	}
+
+	form:after {
+	    content:'';
+	    position: absolute;
+	    top: 100%;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+	    width: 0;
+	    height: 0;
+	    border-top: solid 20px rgba(0, 0, 0, 0.1);
+	    border-left: solid 20px transparent;
+	    border-right: solid 20px transparent;
+	}
+
+	.icon-search {
+		display: none;
+	}
+
+	.icon-search svg {
+		display: none;
+	}
+
+}
+
+@media (max-width: 960px) {
+
+	.navbar-inverse {
+		padding: 0;
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+  	nav a.navbar-brand img.img-responsive {
+		max-width: 120px;
+		margin-top: -10px;
+	}
+
+	.navbar-toggle {
+		border-radius: 0;
+	}
+
+	div.navbar-header {
+		margin-top: 5px;
+	}
+
+	form {
+		width: 100%;
+		margin-top: 5%;
+	}
+
+	form input,
+	form button.btn.btn-search {
+		width: 90%;
+	}
+
+	form button.btn.btn-search {
+		margin-top: 2px;
+		margin-left: 0px;
+	}
+
+	form:after {
+	    content:'';
+	    position: absolute;
+	    top: 100%;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+	    width: 0;
+	    height: 0;
+	    border-top: solid 20px rgba(0, 0, 0, 0.1);
+	    border-left: solid 20px transparent;
+	    border-right: solid 20px transparent;
+	}
+
+	.icon-search {
+		display: none;
+	}
+
+	.icon-search svg {
+		display: none;
+	}
+
+}
+
+@media (max-width: 1024px) {
+
+
+	form {
+		width: 80%;
+		margin-top: 15%;
+	}
+
+}
+
+@media (max-width: 1248px) {
+
+
+	form {
+		width: 80%;
+		margin-top: 5%;
+	}
+
+	form input,
+	form button.btn.btn-search {
+		width: 90%;
+	}
+
+	form button.btn.btn-search {
+		margin-top: 2px;
+		margin-left: 0px;
+	}
+
+}

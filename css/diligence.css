@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+html {
+ overflow-x: hidden;
+ overflow-y: hidden;
+ padding: 0;
+ margin: 0;
+ height: 100%;
+}
+
+body {
+  background: url(../img/diligence-form.jpg) no-repeat center center fixed;    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 2%;
+}
+
+div.logo img {
+  max-width: 100px;
+}
+
+div.logo-login img {
+  max-width: 200px;
+  margin-top: 2%;
+}
+
+/* ------------ FIRST FORM ---------- */
+
+.gprform {
+  padding: 0 30%;
+  margin-top: 2%;
+}
+
+.gprform-login {
+  padding: 0 30%;
+  margin-top: 2%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.controls {
+	text-align: left;
+	position: relative;
+}
+
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="password"],
+.controls button {
+  padding: 23px 30px 20px;	
+  font-size: 14px;
+  line-height: 24px;
+  outline: none;
+  border: 0;
+	width: 100%;
+	margin-bottom: 18px;
+	color: #000;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.controls input[type="text"]:focus + label,
+.controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="password"]:focus + label,
+.controls input[type="password"]:hover + label {
+	color: #000;
+	cursor: text;
+}
+
+.controls label {
+	position: absolute;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	top: 25%;
+	color: #f1f1f1;
+	font-size: 16px;
+	display: inline-block;
+	padding: 4px 10px;
+	font-weight: 400;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+	background-color: rgba(255, 255, 255, 0);
+	pointer-events: none;
+	-moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+	-o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+	-webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+	transition: color 0.3s, top 0.3s, background-color 0.8s;
+}
+
+.controls label.active {
+	top: 2%;
+	color: #fff;
+}
+
+.controls textarea {
+	resize: none;
+	height: 200px;
+}
+
+.controls button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+	cursor: pointer;
+	background-color: #000;
+	border: none;
+	color: #fff;
+  padding: 23px 30px 20px;
+  text-transform: uppercase;
+}
+
+.controls button:hover {
+  background-color: #fff;
+  color: #00a8ec;
+}
+
+div.to-profile a {
+  margin-right: 1%;
+  margin-top: -1.5%;
+  color: #fff;
+  border-radius: 0;
+}
+
+div.to-profile a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+div.to-profile .btn-effect {
+  overflow: hidden;
+  position: relative;
+}
+
+div.to-profile .btn-effect span {
+  z-index: 20;
+}
+
+div.to-profile .btn-effect:after {
+  background: #fff;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .2;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+div.to-profile .btn-effect:hover:after {
+  left: 120%;
+  -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ------------ END OF FIRST FORM ---------- */
+
+
+/* ------------- Media Querries -------------*/
+
+
+@media (max-width: 767px) {
+
+  .gprform {
+    padding: 0 15%;
+    margin-top: 4.5%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .gprform {
+    padding: 0 20%;
+    margin-top: 5%;
+  }
+
+}
